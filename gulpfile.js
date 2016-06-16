@@ -7,7 +7,6 @@ var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var notify = require('gulp-notify');
 var concat = require('gulp-concat');
-var sassGlob = require('gulp-sass-glob');
 
 var source = './app/src'; // dossier de travail
 var dist = './app/dist'; // dossier à livrer
@@ -15,7 +14,6 @@ var dist = './app/dist'; // dossier à livrer
 // Tâche "css" = SASS + autoprefixer + minify
 gulp.task('css', function() {
   return gulp.src(source + '/sass/app.scss')
-    .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(rename({
