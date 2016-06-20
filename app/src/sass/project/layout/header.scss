@@ -1,0 +1,51 @@
+.navbar{
+	display: flex;
+	@include small-mobile {
+    height: 28px;
+    border-bottom: 1px solid $grey-light-e7;
+	}
+	@include mobile {
+
+	}
+  @include tablet {
+
+	}
+	@include desktop {
+
+	}
+
+	.search{
+		flex: 1;
+		text-align: right;
+	}
+	.title{
+		flex: 2;
+		text-align: center;
+	}
+	.menu{
+		flex: 1;
+		text-align: left;
+	}
+}
+.nav{
+  @include small-mobile {
+    width: 100%;
+    height: auto;
+    background: $grey-light-f5;
+		margin-bottom: 20px;
+		display: none;
+  }
+  ul{
+    li{
+			@include small-mobile {
+				padding: 12px;
+				border-bottom: 1px solid $grey-light-e7;
+			}
+      a{
+        @include small-mobile {
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}

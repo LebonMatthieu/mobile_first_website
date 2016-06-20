@@ -1,0 +1,48 @@
+@import "config/import";
+html{
+  background: red;
+}
+body{
+  background: #fff;
+  margin: 10px;
+  padding: 10px;
+}
+.hidden-xs{
+  @include small-mobile {
+    display: none;
+  }
+}
+.main-title{
+  @include small-mobile {
+    font-size: 36px;
+    margin: 22px 0 32px;
+  }
+}
+.secondary-title{
+  @include small-mobile {
+    font-size: 28px;
+  }
+}
+.project-title{
+  @include small-mobile {
+    font-size: 28px;
+    margin: 8px 0 12px;
+  }
+}
+.project-subtitle{
+  @include small-mobile {
+    font-size: 20px;
+  }
+}
+img{
+  @include small-mobile {
+      max-width: 100%;
+      height: auto;
+      display: block;
+  }
+}
+.project-card{
+  @include small-mobile {
+    margin: 45px 0;
+  }
+}
