@@ -5,7 +5,9 @@
     border-bottom: 1px solid $grey-light-e7;
 	}
 	@include mobile {
-
+		padding-top: 25px;
+		height: 50px;
+    border-bottom: 1px solid $grey-light-e7;
 	}
   @include tablet {
 
@@ -28,23 +30,35 @@
 	}
 }
 .nav{
+	display: none;
   @include small-mobile {
     width: 100%;
     height: auto;
     background: $grey-light-f5;
 		margin-bottom: 20px;
-		display: none;
   }
+	@include mobile {
+		width: 100%;
+		height: auto;
+		background: $grey-light-f5;
+		margin-bottom: 20px;
+	}
   ul{
     li{
+			border-bottom: 1px solid $grey-light-e7;
 			@include small-mobile {
 				padding: 12px;
-				border-bottom: 1px solid $grey-light-e7;
+			}
+			@include mobile {
+				padding: 25px;
 			}
       a{
         @include small-mobile {
           margin: 15px 0;
         }
+				@include mobile {
+					margin: 15px 0;
+				}
       }
     }
   }

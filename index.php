@@ -23,7 +23,7 @@
 
   <div class="project-list">
     <?php
-      for($i = 1; $i < 10; $i++ )
+      for($i = 1; $i < 11; $i++ )
       {
         ?>
         <div class="project-card p-<?php echo $i;?>">
@@ -38,6 +38,7 @@
         <?php
       }
     ?>
+    <div class="clear"></div>
   </div>
 
 </div>
