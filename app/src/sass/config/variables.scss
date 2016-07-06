@@ -8,6 +8,14 @@ $two-col-margin: 1%;
 
 $grey-light-f5: #f5f5f5;
 $grey-light-e7: #e7e7e7;
+$box-container-bg : #f7f7f7;
+$box-content-color: #1b1b1b;
+$menu-color : #000;
+
+$montserrat : 'Montserrat', sans-serif;
+$lobster: 'Lobster', cursive;
+
+$duration: .5s;
 
 @mixin calc($property, $expression) {
   #{$property}: calc(#{$expression});
