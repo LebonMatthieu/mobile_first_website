@@ -2,9 +2,9 @@
 School project - Matthieu Lebon
 
 #Instructions
-Run index.php from a WAMP , XAMP or MAMP server
-npm install ( dependency )
-gulp ( default task )
+- Run index.php from a WAMP , XAMP or MAMP server
+- npm install ( dependency )
+- gulp ( default task )
 
 #More
 Two folders :
